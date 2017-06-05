@@ -1,0 +1,7 @@
+#example-element {
+    background-color: #999;
+    color: #fff;
+    padding: 20px;
+    border: 10px dotted #333;
+    font-size: 2em;
+}

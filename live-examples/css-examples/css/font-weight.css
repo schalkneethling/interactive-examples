@@ -1,0 +1,8 @@
+@import 'font.css';
+
+#output section {
+    height: 100px;
+    padding-top: 40px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.2em;
+}

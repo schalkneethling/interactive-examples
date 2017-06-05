@@ -1,0 +1,7 @@
+#example-element {
+    color: #333;
+    padding: 50px 0;
+    border: 2px solid #333;
+    min-height: 100px;
+    text-align: center;
+}

@@ -1,0 +1,9 @@
+<svg width="230" height="120"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <filter id="element-id">
+    <feDropShadow dx="4" dy="8" stdDeviation="4"/>
+  </filter>
+
+</svg>

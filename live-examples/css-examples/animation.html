@@ -1,0 +1,50 @@
+<div id="output">
+    <section id="default-example">
+        <div id="example-element"></div>
+    </section>
+</div>
+
+<p>Try editing the selected examples, or select a different example below:</p>
+
+<section id="example-choice-list">
+<div class="example-choice">
+<pre><code class="language-css">
+/* All animations below use the base @keyframes animation rule, slidein:
+ * @keyframes slidein {
+ *    from {
+ *        margin-left: -20%;
+ *    }
+ *    to {
+ *        margin-left: 100%;
+ *    }
+ * }
+ @keyframes | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state */
+animation: slidein 3s ease-in 1s infinite reverse both running;
+</code></pre>
+<input class="reset" class="hidden" type="button" value="Reset" />
+</div>
+
+<div class="example-choice">
+<pre><code class="language-css">
+/* @keyframes | duration | timing-function | delay | iteration-count | play-state */
+animation: slidein 3s linear 1s 10 running;
+</code></pre>
+<input class="reset" class="hidden" type="button" value="Reset" />
+</div>
+
+<div class="example-choice">
+<pre><code class="language-css">
+/* @keyframes | duration | timing-function | delay | iteration-count | direction */
+animation: slidein 3s linear 1s 10 alternate;
+</code></pre>
+<input class="reset" class="hidden" type="button" value="Reset" />
+</div>
+
+<div class="example-choice">
+<pre><code class="language-css">
+/* @keyframes | duration | timing-function | delay | iteration-count | direction */
+animation: slidein .5s linear 1s 20 alternate;
+</code></pre>
+<input class="reset" class="hidden" type="button" value="Reset" />
+</div>
+</section>

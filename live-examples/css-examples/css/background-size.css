@@ -1,0 +1,8 @@
+#output section {
+    height: auto;
+}
+
+#example-element {
+    background-image: url('https://placekitten.com/g/200/200');
+    height: 220px;
+}

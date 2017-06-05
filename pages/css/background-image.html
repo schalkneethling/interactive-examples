@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../css/css-examples-base.css" />
+    <link rel="stylesheet" href=" ../../live-examples/css-examples/css/background-image.css" />
+  </head>
+  <body>
+    <div id="output">
+    <section id="default-example">
+        <div id="example-element"></div>
+    </section>
+</div>
+
+<p>Try editing the selected examples, or select a different example below:</p>
+
+<section id="example-choice-list">
+<div class="example-choice">
+<pre><code class="language-css">
+background-image: url("https://placekitten.com/g/200/200");
+</code></pre>
+<input class="reset" class="hidden" type="button" value="Reset" />
+</div>
+
+<div class="example-choice">
+<pre><code class="language-css">
+background-image: inherit;
+</code></pre>
+<input class="reset" class="hidden" type="button" value="Reset" />
+</div>
+
+<div class="example-choice">
+<pre><code class="language-css">
+background-image: none;
+</code></pre>
+<input class="reset" class="hidden" type="button" value="Reset" />
+</div>
+
+<div class="example-choice">
+<pre><code class="language-css">
+/* Note: When using multiple background images, you should also use background-repeat: no-repeat;, or else only the top most(first in specified order) image will be seen. */
+background-repeat: no-repeat;
+background-image: url("https://placehold.it/100/edecec.png"), url("https://placehold.it/200/999.png"), url("https://placehold.it/300/333.png");
+</code></pre>
+<input class="reset" class="hidden" type="button" value="Reset" />
+</div>
+</section>
+
+    <script src="../../js/css-examples-base.js"></script>
+    
+  </body>
+</html>

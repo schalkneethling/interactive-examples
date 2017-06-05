@@ -1,0 +1,84 @@
+<div id="output">
+    <section id="default-example">
+        <div class="box">
+            <p>A</p>
+        </div>
+        <div id="example-element" class="box">
+            <p>B ~ I’m positioned</p>
+        </div>
+        <div class="box">
+            <p>C</p>
+        </div>
+        <div class="box">
+            <p>D</p>
+        </div>
+    </section>
+
+    <section class="fixed-example hidden" aria-hidden="true">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor eget pulvinar lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ac dolor augue. Pellentesque mi mi, laoreet et dolor sit amet, ultrices varius risus. Nam vitae iaculis elit. Aliquam mollis interdum libero. Sed sodales placerat egestas. Vestibulum ut arcu aliquam purus viverra dictum vel sit amet mi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor eget pulvinar lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ac dolor augue. Pellentesque mi mi, laoreet et dolor sit amet, ultrices varius risus. Nam vitae iaculis elit. Aliquam mollis interdum libero. Sed sodales placerat egestas. Vestibulum ut arcu aliquam purus viverra dictum vel sit amet mi.</p>
+        <div class="box">A ~ I’m fixed</div>
+    </section>
+
+    <section class="sticky-example hidden" aria-hidden="true">
+        <dl>
+        <div>
+            <dt>A</dt>
+            <dd>Andrew W.K.</dd>
+            <dd>Apparat</dd>
+            <dd>Arcade Fire</dd>
+            <dd>At The Drive-In</dd>
+            <dd>Aziz Ansari</dd>
+        </div>
+        <div>
+            <dt>C</dt>
+            <dd>Chromeo</dd>
+            <dd>Common</dd>
+            <dd>Converge</dd>
+            <dd>Crystal Castles</dd>
+            <dd>Cursive</dd>
+        </div>
+        </dl>
+    </section>
+</div>
+
+<p>Try editing the selected examples, or select a different example below:</p>
+
+<section id="example-choice-list">
+<div class="example-choice">
+<pre><code class="language-css">
+/* Positioned relative to itself without changing layout, thus leaving a gap for the element where it would have been */
+position: relative;
+top: -10px;
+left: 20px;
+</code></pre>
+</div>
+
+<div class="example-choice">
+<pre><code class="language-css">
+/* Do not leave space for the element. Instead, position it at a specified position relative to its closest positioned ancestor. */
+position: absolute;
+top: 20px;
+left: 30px;
+</code></pre>
+</div>
+
+<div id="choice-fixed" class="example-choice">
+<pre><code class="language-css">
+/* Position element at a specified position relative to the screen's viewport and don't move it when scrolled. */
+position: fixed;
+top: 40px;
+left: 10px;
+</code></pre>
+<input class="reset" class="hidden" type="button" value="Reset" />
+</div>
+
+<div id="choice-sticky" class="example-choice">
+<pre><code class="language-css">
+/* Position element at a specified position relative to the screen's viewport and don't move it when scrolled. */
+position: sticky;
+top: -1px;
+</code></pre>
+<input class="reset" class="hidden" type="button" value="Reset" />
+</div>
+</section>

@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeff2;
+    padding: 0;
+    margin: 0;
+}
+
+#buttons {
+    margin: .5em;
+}
+
+.output-container {
+    background-color: #fff;
+    padding: .8em 1em 1em;
+    width: 100%;
+    height: 40px;
+    font-family: courier;
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, .1);
+    line-height: 1;
+}
+
+#editor,
+#output {
+    font-size: 14px;
+}
+
+.CodeMirror {
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-top: 1px solid rgba(0, 0, 0, .3);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, .2);
+}
+
+#editor {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+#editor > input {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+#editor > input.hidden {
+    display: none;
+}
+
+#output {
+    margin: 0;
+}
+
+.fade-in {
+    animation: fadein .5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

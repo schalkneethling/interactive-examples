@@ -1,0 +1,8 @@
+#output {
+    overflow: hidden;
+}
+
+#example-element {
+    display: block;
+    color: #c13832;
+}

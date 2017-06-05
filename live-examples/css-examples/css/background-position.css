@@ -1,0 +1,8 @@
+#example-element {
+    background-image: url('https://placekitten.com/g/80/80');
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    border: 2px solid #000;
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,69 @@
+#output {
+    overflow: scroll;
+}
+
+.box,
+#example-element {
+    display: inline-block;
+    background-color: #1766aa;
+    padding: 20px;
+    border: 3px solid #fff;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+/*
+--------------------------------------
+Fixed Example CSS
+--------------------------------------
+*/
+.fixed-example {
+    padding-left: 120px;
+    width: 500px;
+    height: 200px;
+    overflow: scroll;
+}
+
+.fixed-example.hidden .box {
+    display: none;
+}
+
+/*
+--------------------------------------
+Sticky Example CSS
+--------------------------------------
+*/
+.sticky-example dl {
+    margin: 0;
+}
+
+.sticky-example dl > div {
+    padding: 0;
+    font: bold 20px/45px Helvetica, Arial, sans-serif;
+}
+
+.sticky-example dt {
+    background-color: #b8c1c8;
+    color: #fff;
+    margin: 0;
+    padding: 2px 0 0 12px;
+    border-bottom: 1px solid #989ea4;
+    border-top: 1px solid #717d85;
+    font-size: 21px;
+    line-height: 18px;
+}
+
+.sticky-example dd {
+    margin: 0;
+    padding: 0;
+    padding-left: 12px;
+    font-size: 20px;
+    line-height: 45px;
+    white-space: nowrap;
+}
+
+.sticky-example dd + dd {
+    border-top: 1px solid #ccc;
+}

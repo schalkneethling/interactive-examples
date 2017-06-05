@@ -1,0 +1,216 @@
+/* http://prismjs.com/download.html?themes=prism&languages=css */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeff2;
+    padding: 0;
+    margin: 0;
+}
+
+pre {
+    min-height: 40px;
+}
+
+pre[class*='language-'] {
+    margin: .2em;
+    padding: 0 1em;
+}
+
+#output {
+    background-color: #fff;
+}
+
+#output section {
+    width: 100%;
+    height: 220px;
+    max-height: 250px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, .1);
+}
+
+#example-element {
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 80%;
+    text-align: center;
+}
+
+#example-element {
+    display: block;
+    color: #c13832;
+}
+
+.example-choice {
+    position: relative;
+    display: block;
+    padding: 0 .5em .5em;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color .2s ease-out;
+}
+
+.example-choice:hover {
+    background-color: #f5f5f5;
+}
+
+.example-choice.selected {
+    background-color: #fff;
+    box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, .2);
+    cursor: text;
+    transition: background-color .2s ease-in;
+}
+
+.example-choice > code {
+    display: inline-block;
+    width: 90%;
+}
+
+.example-choice.invalid {
+    background: #fff url('../media/alerticon-warning@2x.png') 95% center no-repeat;
+}
+
+.reset {
+    display: none;
+    position: absolute;
+    top: .75em;
+    right: 1em;
+}
+
+.example-choice.selected > .reset {
+    display: unset;
+}
+
+.hidden {
+    display: none;
+}
+
+[contenteditable]:focus {
+    outline: 0 solid transparent;
+}
