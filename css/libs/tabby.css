@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font: 16px/1.5 sans-serif;
+}
+
+button[role='tab'] {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-bottom: 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button[role='tab']:hover,
+button[role='tab']:focus,
+button[aria-selected='true'] {
+    background-color: #333;
+    color: #fff;
+    outline: none;
+}
+
+button[aria-selected='true'] {
+    color: #83d0f2;
+    border-top: 3px solid #83d0f2;
+}
+
+section[role='tabpanel'] {
+    border: 1px solid #333;
+}
+
+.hidden {
+    display: none;
+}

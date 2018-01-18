@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>%title%</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/css-examples-libs-1-8-4.css" />
+    <link rel="stylesheet" href="../../css/libs/tabby.css" />
+    %example-css-src%
+  </head>
+  <body>
+    <div class="mdn-interactive-example">
+      <section id="tab-container" class="tabs">
+        <div role="tablist">
+          <button role="tab" aria-selected="true" aria-controls="html-panel" id="html">
+            HTML
+          </button>
+          <button role="tab" aria-selected="false" aria-controls="css-panel" id="css" tabindex="-1">
+            CSS
+          </button>
+          <button role="tab" aria-selected="false" aria-controls="js-panel" id="js" tabindex="-1">
+            JavaScript
+          </button>
+        </div>
+
+        <section tabindex="0" role="tabpanel" id="html-panel" aria-labelledby="html">
+          <textarea id="html-editor"></textarea>
+        </section>
+        <section tabindex="0" role="tabpanel" id="css-panel" aria-labelledby="css" class="hidden">
+          <textarea id="css-editor"></textarea>
+        </section>
+        <section tabindex="0" role="tabpanel" id="js-panel" aria-labelledby="js" class="hidden">
+          <textarea id="js-editor"></textarea>
+        </section>
+      </section>
+
+      <section class="output-container">
+        <div id="output" class="output"></div>
+        <div class="buttons-container">
+          <button id="execute" class="button run" type="button">Run &rsaquo;</button>
+          <button id="reset" type="button" class="button">Reset</button>
+        </div>
+      </section>
+    </div>
+
+    <div id="user-message" class="user-message" aria-hidden="true">Copied!</div>
+
+    <script src="../../js/lib/codemirror.js"></script>
+    <script src="../../js/mode/css/css.js"></script>
+    <script src="../../js/mode/javascript/javascript.js"></script>
+    <script src="../../js/mode/xml/xml.js"></script>
+    <script src="../../js/mode/htmlmixed/htmlmixed.js"></script>
+
+    <script src="../../js/tabby.js"></script>
+    %example-js-src%
+  </body>
+</html>
