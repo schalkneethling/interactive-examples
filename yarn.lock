@@ -3051,10 +3051,10 @@ mdast-util-to-string@^1.0.0:
   resolved "https://registry.yarnpkg.com/mdast-util-to-string/-/mdast-util-to-string-1.1.0.tgz#27055500103f51637bd07d01da01eb1967a43527"
   integrity sha512-jVU0Nr2B9X3MU4tSK7JP1CMkSvOj7X5l/GboG1tKRw52lLF1x2Ju92Ms9tNetCcbfX3hzlM73zYo2NKkWSfF/A==
 
-mdn-bob@2.0.32:
-  version "2.0.32"
-  resolved "https://registry.yarnpkg.com/mdn-bob/-/mdn-bob-2.0.32.tgz#ab6579857288499212e6e049fd6f704af79a718d"
-  integrity sha512-E/soM0UuFLoJ85VC1aLWDWdxeny8320+Il/vWOGAfhojAZ4QhI06wnzL336EGEegeDbsuJJA4zsDKyWgsW1xpw==
+mdn-bob@2.0.33:
+  version "2.0.33"
+  resolved "https://registry.yarnpkg.com/mdn-bob/-/mdn-bob-2.0.33.tgz#f5beec6d33abcf0cdc2d743bff23221613b30694"
+  integrity sha512-g8mOtVinx5p9ngp7qBPQec8Pk2z3ONiM425p3cglV3COyac1yrNxQ8gPQrNoh+hUiB3WpJA1lXQaJwZXPR8oeQ==
   dependencies:
     browserify "17.0.0"
     clean-css "5.1.2"
